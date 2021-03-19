@@ -1,0 +1,85 @@
+#!/bin/bash
+
+if [[ "$#" < 3 ]] ; then
+    echo "Please write the name of the directory, the header and the files separated by spaces"
+    exit;
+fi
+
+ARRAY=("$@")
+
+DIRECTORIO="${ARRAY[0]}"
+HEADERMAY="${ARRAY[1]^^}"
+HEADERMIN="${ARRAY[1],,}"
+FILES="${ARRAY[@]:2}"
+
+mkdir $DIRECTORIO && cd $DIRECTORIO && echo -e "#include \"$HEADERMIN.h\"
+/**
+ *  - ..
+ * @p: ..
+ * @o: ..
+ * Return:..
+ */
+prototiposincoma
+{
+comprobar que existen los parámetros
+(*f)(algo);
+return (0);
+}" | tee $FILES && echo -e "#ifndef $HEADERMAY \b_H
+#define $HEADERMAY \b_H
+#include <stdio.h>
+
+int _putchar(char c);
+
+#endif /* $HEADERMAY \b_H */" | tee $HEADERMIN.h && echo -E "
+# Titulo
+Ponga el meme aqui
+---
+> ## Introduction
+Descripcion general aqui.
+
+RECORDAR INCLUIR:
+What you learned in this project
+
+### Flowchart
+
+Ponga el flowchart aqui.
+
+---
+>## Files
+These are the files contained in this repository:
+- **nombre** : que hace.
+
+---
+> ## Documentation
+
+To use this function you must clone it from the \`(https://github.com/Naveduran/holbertonschool-low_level_programming/tree/main/$DIRECTORY)\` repository.
+
+---
+> ## Compilation
+
+Your code will be compiled this way:
+\`\`\`c
+gcc -Wall -Werror -Wextra -pedantic
+\`\`\`\`
+* Our main files will include your main header file (\`$HEADERMIN\`): \`#include \"$HEADERMIN.h\"\`
+
+---
+> ## Examples to use it
+
+*Example 0*
+
+Ponga aqui el ejemplo
+
+    Output: Ponga aqui el output.
+
+---
+
+>## Environment
+ This project has been tested on \`Ubuntu 14.06.6 LTS\`
+
+---
+
+>## Authors
+
+* **Natalia Vera** [github](https://github.com/Naveduran) - naveduran@gmail.com
+" | tee README.md
