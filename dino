@@ -1,17 +1,19 @@
 #!/bin/bash
 
-
 COMMIT="$1"
 
-
-echo FILES: "${@:2}"
-echo COMMIT: "$COMMIT"
+if ($# < 2)
+    echo Write dino, the commit between double quotes, and write the file or files to upload.
+fi
 
 for FILE in "${@:2}"; do
     if [[ $FILE == *.c || $FILE == *.h ]]; then
-	if [[ $(betty $FILE 2>&1 > /dev/null) ]]; then
-	    betty $FILE
+	b=$(betty $FILE)
+	if [[ $(echo $b | grep -o "ERROR") || $(echo $b | grep -o "WARNING") ]]; then
+	    betty $b
+	    exit
 	fi
+
     fi
 done
 git add ${@:2}
