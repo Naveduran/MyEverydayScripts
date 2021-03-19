@@ -2,7 +2,7 @@
 
 COMMIT="$1"
 
-if ($# < 2)
+if ($# < 2); then
     echo Write dino, the commit between double quotes, and write the file or files to upload.
 fi
 
