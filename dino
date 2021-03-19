@@ -1,15 +1,19 @@
 #!/bin/bash
 
-ARRAY="$@"
-COMMIT="{$ARRAY[0]}"
 
-for FILE in "${ARRAY[@]:1}"; do
+COMMIT="$1"
+
+
+echo FILES: "${@:2}"
+echo COMMIT: "$COMMIT"
+
+for FILE in "${@:2}"; do
     if [[ $FILE == *.c || $FILE == *.h ]]; then
 	if [[ $(betty $FILE 2>&1 > /dev/null) ]]; then
 	    betty $FILE
 	fi
     fi
 done
-git add $@
+git add ${@:2}
 git commit -m "$COMMIT"
-git push origin main
+git push
