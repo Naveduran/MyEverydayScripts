@@ -56,8 +56,7 @@ The files contained in this repository are:
 
 |File|Description|
 |:-:|:-:|
-|readmeg.py| This is the executable program.|
-|RGREADME.md| This are the instructions for use.|
+|README.md| This are the instructions for use, non writtable for avoid mistakes.|
 
 ## Environment
 This project has been tested on Ubuntu 14.06.6 LTS
