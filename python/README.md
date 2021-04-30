@@ -63,5 +63,5 @@ This project has been tested on Ubuntu 14.06.6 LTS
 Released on April 29th of 2021.
 
 ## Authors
-* **Nicolás Urrea Rangel :** - [Email](nico15935746@gmail.com)
-* **Natalia Vera Duran :** - [Email](naveduran@gmail.com)
+* **Nicolás Urrea Rangel:** - [Email](nico15935746@gmail.com)
+* **Natalia Vera Duran:** - [Email](naveduran@gmail.com)
