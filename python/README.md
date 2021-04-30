@@ -1,6 +1,8 @@
 # Readme Generator
 We are bored of write the same things once and once again. We trust in the comments made inside of our files, and we decided to automate the boring stuff. 
 
+![](https://miro.medium.com/max/500/1*TKt92huSBbSnbRNuAVTx_A.jpeg)
+
 ## Description
 readmeg writes the basic structure of a readme file filling all the content and getting ready to show the awesome code that you do. 
 It includes title, description, files, environment, and authors. 
