@@ -1,8 +1,8 @@
 # Readme Generator
-We are bored of write the same things once and once again. We trust in the comments made inside of our files, and we decided to automate to boring stuff. 
+We are bored of write the same things once and once again. We trust in the comments made inside of our files, and we decided to automate the boring stuff. 
 
 ## Description
-Readmeg writes the basic structure of a readme file filling all the content  and getting ready to show the awesome code that you do. 
+readmeg writes the basic structure of a readme file filling all the content and getting ready to show the awesome code that you do. 
 It includes title, description, files, environment, and authors. 
 
 ## Installation
@@ -10,7 +10,6 @@ Move the file readmeg.py to the path /usr/local/bin. If you are in linux, you ca
 '''
 $ mv readmeg.py /usr/local/bin
 '''
-Then you can erase this repository.
 ## How to use
 You need to go to the directory where you want to create the readme file. Then you can type this in the command line:
 '''
@@ -60,10 +59,9 @@ The files contained in this repository are:
 
 ## Environment
 This project has been tested on Ubuntu 14.06.6 LTS
-
 ## Version
 Released on April 29th of 2021.
 
 ## Authors
 * **Nicolás Urrea Rangel :** - [Email](nico15935746@gmail.com)
-* **Natalia Vera Duran:** - [Email](naveduran@gmail.com)
+* **Natalia Vera Duran :** - [Email](naveduran@gmail.com)
