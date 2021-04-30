@@ -78,6 +78,8 @@ for file in files:
         if description[-1] != ".":
             description += "."
         text += "|{}|{}|\n".format(file, description)
+    else:
+        text += "|{}||\n".format(file)
 
 text += "\n## Environment\nThis project has been tested on {} \
 LTS\n\n## Authors\n* **{}:** - [Email]({})\n" .format(environ, author, email)
