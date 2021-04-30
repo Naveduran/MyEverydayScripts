@@ -45,10 +45,10 @@ Takes all the multiline comments of the file to list all the functions written i
 */
 ```
 ### Environment
-By default, RG assumes the files were tested and created in Ubuntu 14.06.6 LTS. This can be changed using the configuration file.
+The first time the program is executed is going to ask you the environ where the repositpory was developed.
 
 ### Authors
-Readmeg reads the git configuration variables 'user.fullname', 'user.email' and 'user.environ'. If those aren't created, RG asks the full name of the user to be written in the readmes.
+Readmeg reads the git configuration variables 'user.fullname', 'user.email' and 'user.environ'. If those aren't created, readmeg asks the full name of the user.
 
 ## Files
 The files contained in this repository are:
@@ -62,7 +62,7 @@ The files contained in this repository are:
 This project has been tested on Ubuntu 14.06.6 LTS
 
 ## Version
-Released on April 29th of 2021
+Released on April 29th of 2021.
 
 ## Authors
 * **Nicolás Urrea Rangel :** - [Email](nico15935746@gmail.com)
