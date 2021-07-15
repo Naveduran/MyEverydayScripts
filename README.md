@@ -37,7 +37,7 @@ Now you can use the command from any folder.
 $ push "This is a commit" filename.c [filename2.c] [...]
 ```
 
-TO DO:
+## TO DO:
 
 - Test scripts in sandbox, vagrant and wsl.
 
