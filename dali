@@ -64,7 +64,7 @@ General description and objectives.
 ## Compilation
 
 \`\`\`c
-gcc -Wall -Werror -Wextra -pedantic main.c file_name.c
+gcc -Wall -Werror -Wextra -pedantic -std=gnu89 main.c file_name.c
 \`\`\`\`
 
 ## Environment
