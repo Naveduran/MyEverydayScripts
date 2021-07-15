@@ -3,7 +3,7 @@
 COMMIT="$1"
 
 if [[ $# < 2 ]]; then
-    echo Write dino, the commit between double quotes, and write the file or files to upload.
+    echo Write push, the commit between double quotes, and write the file or files to upload.
 fi
 
 for FILE in "${@:2}"; do
