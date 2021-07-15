@@ -1,10 +1,10 @@
-# Examples
+# My Everyday Scripts
 This is a compilation of multipropose scripts created during holberton.
 
 ## newcproject
-Bash script to create the bases of a project in C language including readme file, header file and all the files.
-Objective: Automate the creation of the files with some dafault content.
-Advantages: Includes the most common libraries in C language. 
+Bash script to create the files of a project in C language including readme file, header file and all the files with basic mandatory content.
+Objective: Automate the creation of the files.
+Advantages: Includes the most common libraries in C language.
 Limitations: Posterior edition of the readme file is required.
 
 #### Installation:
@@ -22,7 +22,7 @@ $ newcproject directory_name header_file_name file_name.c [file_name2.c] [...]
 
 ## push
 Bash script to check the ANSI C89 standard (ISO/IEC 9899:1990) style, add, commit, and push files to github for projects wrote in C language.
-Objective: Reduce the time to commit files to github, and never forget to check the style.
+Objective: Reduce the time to push files to github.
 Requirements: Install Betty Style Checker https://github.com/holbertonschool/Betty
 
 #### Installation:
