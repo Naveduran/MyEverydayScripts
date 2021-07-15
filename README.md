@@ -26,10 +26,11 @@ Objective: Reduce the time to commit files to github, and never forget to check 
 Requirements: Install Betty Style Checker https://github.com/holbertonschool/Betty
 
 Installation:
+Download the repository, move to the folder, and run this command:
 ```
 $ sudo mv dino /usr/local/bin
 ```
-
+Now you can use the command from any folder.
 Usage:
 ```
 $ dino "This is a commit" filename.c [filename2.c] [...]
