@@ -7,7 +7,7 @@ Objective: Automate the creation of the files with some dafault content.
 Advantages: Includes the most common libraries in C language. 
 Limitations: Posterior edition of the readme file is required.
 
-Installation:
+#### Installation:
 
 Download the repository, move to the folder, and run this command:
 ```
@@ -15,7 +15,7 @@ $ sudo mv dali /usr/local/bin
 ```
 Now you can use the command from any folder.
 
-Usage:
+#### Usage:
 ```
 $ dali directory_name header_file_name file_name.c [file_name2.c] [...]
 ```
@@ -25,13 +25,14 @@ Bash script to check the ANSI C89 standard (ISO/IEC 9899:1990) style, add, commi
 Objective: Reduce the time to commit files to github, and never forget to check the style.
 Requirements: Install Betty Style Checker https://github.com/holbertonschool/Betty
 
-Installation:
+#### Installation:
 Download the repository, move to the folder, and run this command:
 ```
 $ sudo mv dino /usr/local/bin
 ```
 Now you can use the command from any folder.
-Usage:
+
+#### Usage:
 ```
 $ dino "This is a commit" filename.c [filename2.c] [...]
 ```
