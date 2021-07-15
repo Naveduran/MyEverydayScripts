@@ -12,74 +12,68 @@ HEADERMAY="${ARRAY[1]^^}"
 HEADERMIN="${ARRAY[1],,}"
 FILES="${ARRAY[@]:2}"
 
-mkdir $DIRECTORIO && cd $DIRECTORIO && echo -e "#include \"$HEADERMIN.h\"
+/*Create the directory and move to it*/
+mkdir $DIRECTORIO && cd $DIRECTORIO && 
+/* && means If the previous step fails, do not continue with the script */
+
+/* Print the structure for everyfile in stdoutput */
+echo -e "#include \"$HEADERMIN.h\"
 /**
- *  - ..
- * @p: ..
- * @o: ..
- * Return:..
+ * function_name - function description
+ * @a: description of parameter a
+ * @b: description of parameter b
+ * Return: description of the return of this function
  */
-prototiposincoma
+prototype whitout semicolon
 {
-comprobar que existen los parámetros
-(*f)(algo);
+/* Remember to check first if parameters exists */
 return (0);
-}" | tee $FILES && echo -e "#ifndef $HEADERMAY \b_H
+}" | 
+
+/* Create files, and print the previous on each file */
+tee $FILES && 
+
+/* Create the structure of the header file */
+echo -e "#ifndef $HEADERMAY \b_H
 #define $HEADERMAY \b_H
-#include <stdio.h>
 
-int _putchar(char c);
+/* -- Different libraries for c functions --*/
+#include <stdio.h> /* For printf */
+#include <unistd.h> /* For fork, execve */
+#include <stdlib.h> /* For exit failure or success */
+#include <string.h> /* For strtok, strlen */
+#include <errno.h> /* For errno and perror */
+#include <sys/types.h> /* For type pid */
+#include <sys/wait.h> /* For wait */
+#include <sys/stat.h> /* For use of stat function */
+#include <fcntl.h> /* For open files */
+#include <ctype.h> /* For isdigit */
 
-#endif /* $HEADERMAY \b_H */" | tee $HEADERMIN.h && echo -E "
-# Titulo
-Ponga el meme aqui
----
-> ## Introduction
-Descripcion general aqui.
+int _putchar(char c); /* Delete thsi line if you aren't a holberton student from the first trimester*/
 
-RECORDAR INCLUIR:
-What you learned in this project
+#endif /* $HEADERMAY \b_H */" | 
 
-### Flowchart
+/* Create the header file and print inside the content */
+tee $HEADERMIN.h && 
 
-Ponga el flowchart aqui.
+/* Create the content of the readmefile*/
+echo -E "
+# Title
+General description and objectives.
 
----
->## Files
-These are the files contained in this repository:
-- **nombre** : que hace.
+## Compilation
 
----
-> ## Documentation
-
-To use this function you must clone it from the \`(https://github.com/Naveduran/holbertonschool-low_level_programming/tree/main/$DIRECTORY)\` repository.
-
----
-> ## Compilation
-
-Your code will be compiled this way:
 \`\`\`c
-gcc -Wall -Werror -Wextra -pedantic
+gcc -Wall -Werror -Wextra -pedantic main.c file_name.c
 \`\`\`\`
-* Our main files will include your main header file (\`$HEADERMIN\`): \`#include \"$HEADERMIN.h\"\`
 
----
-> ## Examples to use it
-
-*Example 0*
-
-Ponga aqui el ejemplo
-
-    Output: Ponga aqui el output.
-
----
-
->## Environment
+## Environment
  This project has been tested on \`Ubuntu 14.06.6 LTS\`
 
----
 
 >## Authors
 
 * **Natalia Vera** [github](https://github.com/Naveduran) - naveduran@gmail.com
-" | tee README.md
+" | 
+/* Print the content ofn the readme file */
+tee README.md
