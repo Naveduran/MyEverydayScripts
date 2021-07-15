@@ -36,3 +36,17 @@ Now you can use the command from any folder.
 ```
 $ push "This is a commit" filename.c [filename2.c] [...]
 ```
+
+TO DO:
+
+- Test scripts in sandbox, vagrant and wsl.
+
+- Upgrade push command to include other file types and other linterns:
+    - Python - Pycodestyle.
+    - Bash - Shellcheck.
+
+- Upgrade newcproject to:
+    - Ask the name and email of the developer.
+
+- A script that changes the emacs config file to allow:
+    - Show line numbers. 
