@@ -12,11 +12,11 @@ HEADERMAY="${ARRAY[1]^^}"
 HEADERMIN="${ARRAY[1],,}"
 FILES="${ARRAY[@]:2}"
 
-/*Create the directory and move to it*/
+#Create the directory and move to it
 mkdir $DIRECTORIO && cd $DIRECTORIO && 
-/* && means If the previous step fails, do not continue with the script */
+# && means If the previous step fails, do not continue with the script
 
-/* Print the structure for everyfile in stdoutput */
+# Print the structure for everyfile in stdoutput
 echo -e "#include \"$HEADERMIN.h\"
 /**
  * function_name - function description
@@ -30,10 +30,10 @@ prototype whitout semicolon
 return (0);
 }" | 
 
-/* Create files, and print the previous on each file */
+# Create files, and print the previous on each file
 tee $FILES && 
 
-/* Create the structure of the header file */
+# Create the structure of the header file
 echo -e "#ifndef $HEADERMAY \b_H
 #define $HEADERMAY \b_H
 
@@ -53,10 +53,10 @@ int _putchar(char c); /* Delete thsi line if you aren't a holberton student from
 
 #endif /* $HEADERMAY \b_H */" | 
 
-/* Create the header file and print inside the content */
+# Create the header file and print inside the content
 tee $HEADERMIN.h && 
 
-/* Create the content of the readmefile*/
+# Create the content of the readmefile
 echo -E "
 # Title
 General description and objectives.
@@ -75,5 +75,5 @@ gcc -Wall -Werror -Wextra -pedantic -std=gnu89 main.c file_name.c
 
 * **Natalia Vera** [github](https://github.com/Naveduran) - naveduran@gmail.com
 " | 
-/* Print the content ofn the readme file */
+# Print the content ofn the readme file
 tee README.md
